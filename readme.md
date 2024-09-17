@@ -1,5 +1,21 @@
 Keras models that you can use with the CIFAR-10 dataset. These models include:
 
+```mermaid
+graph TD
+    A[Dataset] -->|Preprocess Data| B[Preprocessing]
+    B -->|Train Model| C[Model]
+    C -->|Evaluate Model| D[Evaluation]
+    C -->|Classify New Images| E[Inference]
+
+    subgraph Workflow
+        A
+        B
+        C
+        D
+        E
+    end
+```
+
 1. Simple Dense Neural Network (DNN)
 2. ResNet-like Model
 3. VGG-like Model
